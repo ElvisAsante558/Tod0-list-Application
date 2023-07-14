@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>To-do App</h1>
+        <div class="theme-toggle">
+          <label class="switch">
+            <input type="checkbox" id="theme-toggle-checkbox">
+            <span class="slider"></span>
+          </label>
+        </div>
+        <form id="todo-form">
+          <input type="text" id="todo-input" placeholder="Add new to-do">
+          <button type="submit">Add</button>
+        </form>
+        <ul id="todo-list">
+          <!-- Todo items will be dynamically added here -->
+        </ul>
+        <div class="filter-options">
+          <button class="filter-option active" data-filter="all">All</button>
+          <button class="filter-option" data-filter="active">Active</button>
+          <button class="filter-option" data-filter="completed">Completed</button>
+        </div>
+        <button id="clear-completed">Clear Completed</button>
+      </div>
+
+<script src="script.js"></script>
+</body>
+</html>
